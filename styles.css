@@ -1,0 +1,218 @@
+/* Reseta alguns estilos padrões para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  header .logo img {
+    max-width: 100px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header .social-links a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  header .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  #banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 40px 0;
+  }
+  
+  #banner .banner-logo {
+    width: 1200px;
+    height: 200px;
+    background-image: url('img/Barbara_Lorrany.jpg');
+    background-size: cover;
+   
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #sobre {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  #sobre img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  #obras .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  #obras .book {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #obras .book img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #obras .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  #contato {
+    text-align: center;
+    padding: 40px 0;
+    background: #f4f4f4;
+  }
+  
+  #contato .social-links-large {
+    margin-top: 20px;
+  }
+  
+  #contato .btn-large {
+    background: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer nav ul li {
+    margin: 0 10px;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .social-links {
+    margin-top: 10px;
+  }
+  
+  footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      margin-bottom: 10px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul li {
+      margin: 5px 0;
+    }
+  
+    header .social-links {
+      margin-top: 10px;
+    }
+  
+    #sobre {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #sobre img {
+      margin-bottom: 20px;
+    }
+  
+    #banner .banner-logo {
+      max-width: 150px;
+    }
+  
+    #contato .btn-large {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    footer nav ul {
+      flex-direction: column;
+    }
+  
+    footer nav ul li {
+      margin: 5px 0;
+    }
+    #banner .banner-logo {
+        width: 780px;
+        height: 200px;
+        background-image: url('img/Barbara_Lorrany.jpg');
+        background-size: cover;
+       
+      }
+  }
+  
+  
